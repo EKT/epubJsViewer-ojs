@@ -37,7 +37,7 @@
 			{$title|escape}
 		</a>
 
-		<a href="{$pdfUrl}" class="download" download>
+		<a href="{$epubUrl}" class="download" download>
 			<span class="label">
 				{translate key="common.download"}
 			</span>
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 		{/if}
-		 <iframe class="viewable_file_frame" src="{$pluginUrl}/epub.js/index.html?url={$pdfUrl}" allowfullscreen webkitallowfullscreen></iframe>
+		 <iframe class="viewable_file_frame" src="{$pluginUrl}/epub.js/index.html?url={$epubUrl}" allowfullscreen webkitallowfullscreen></iframe>
 	</div>
 	{call_hook name="Templates::Common::Footer::PageFooter"}
 </body>
