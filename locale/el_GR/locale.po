@@ -12,7 +12,7 @@ msgstr ""
 "Language: \n"
 
 msgid "plugins.generic.epubJsViewer.name"
-msgstr "EPUB.JS EPUB Viewer"
+msgstr "EPUB Viewer"
 
 msgid "plugins.generic.epubJsViewer.description"
 msgstr "Αυτό το Πρόσθετο χρησιμοποιεί τη βιβλιοθήκη <a href=\"https://github.com/futurepress/epub.js\">epub.js EPUB viewer</a>. Εξυπηρετεί στην προβολή αρχείων με μορφή epub."
