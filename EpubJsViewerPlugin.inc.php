@@ -1,16 +1,14 @@
 <?php
 
-/**
- * @file plugins/generic/pdfJsViewer/PdfJsViewerPlugin.inc.php
- *
- * Copyright (c) 2013-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @class PdfJsViewerPlugin
- *
- * @brief This plugin enables embedding of the pdf.js viewer for PDF display
- */
+ /**
+  * version.xml
+  *
+  * Copyright (c) 2020 Dimitris Sioulas
+  * Copyright (c) 2020 National Documentation Center
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  */
 
 import('lib.pkp.classes.plugins.GenericPlugin');
 
@@ -21,7 +19,6 @@ class EpubJsViewerPlugin extends GenericPlugin {
 	function register($category, $path, $mainContextId = null) {
 		if (parent::register($category, $path, $mainContextId)) {
 			if ($this->getEnabled($mainContextId)) {
-
 				HookRegistry::register('ArticleHandler::view::galley', array($this, 'submissionCallback'), HOOK_SEQUENCE_LAST);
 				HookRegistry::register('IssueHandler::view::galley', array($this, 'issueCallback'), HOOK_SEQUENCE_LAST);
 				AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON);
@@ -91,23 +88,11 @@ class EpubJsViewerPlugin extends GenericPlugin {
 	function submissionCallback($hookName, $args) {
 		$request =& $args[0];
 		$application = Application::get();
-		switch ($application->getName()) {
-			case 'ojs2':
-				$issue =& $args[1];
-				$galley =& $args[2];
-				$submission =& $args[3];
-				$submissionNoun = 'article';
-				break;
-			case 'ops':
-				$galley =& $args[1];
-				$submission =& $args[2];
-				$submissionNoun = 'preprint';
-				$issue = null;
-				break;
-			default: throw new Exception('Unknown application!');
-		}
-
-
+			
+		$issue =& $args[1];
+		$galley =& $args[2];
+		$submission =& $args[3];
+		$submissionNoun = 'article';
 
 		if ($galley && $galley->getFileType() == 'application/epub+zip') {
 			$galleyPublication = null;
