@@ -1,20 +1,14 @@
 <?php
 
-/**
- * @defgroup plugins_viewableFile_pdfJsViewer
- */
-
-/**
- * @file plugins/viewableFile/pdfJsViewer/index.php
- *
- * Copyright (c) 2013-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @ingroup plugins_viewableFile_pdfJsViewer
- * @brief Wrapper for pdf.js-based viewer.
- *
- */
+ /**
+  * version.xml
+  *
+  * Copyright (c) 2020 Dimitris Sioulas
+  * Copyright (c) 2020 National Documentation Center
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  */
 
 require_once('EpubJsViewerPlugin.inc.php');
 return new EpubJsViewerPlugin();
