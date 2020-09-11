@@ -42,7 +42,7 @@
 				{translate key="common.download"}
 			</span>
 			<span class="pkp_screen_reader">
-				{translate key="common.downloadPdf"}
+				{translate key="common.download"}
 			</span>
 		</a>
 
