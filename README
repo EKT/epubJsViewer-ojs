@@ -1,19 +1,20 @@
 =============================================
 === epub.js Viewer Plugin
-=== An epub.js-based EPUB viewer for OJS 3.0.x
+=== An epub.js-based EPUB viewer for OJS 3.2.x
 === Author: Dimitris Sioulas <dsioulas@ekt.gr>
 =============================================
 
 About
 -----
 This is an Epub viewer plugin based on the epub.js EPUB reader.
+This plugin permits the users to view EPUB files.
 
 License
 -------
 This plugin is licensed under the GNU General Public License v2. See the file LICENSE for the complete terms
 of this license.
 
-Installation
+Installation #1
 ------------
 To install this plugin, place its files into a subdirectory of plugins/generic called epubJsViewer.
 
