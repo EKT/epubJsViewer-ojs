@@ -6,7 +6,7 @@
 
 About
 -----
-This is an Epub viewer plugin based on the <a href=\"https://github.com/futurepress/epub.js\">epub.js Epub Reader</a>.
+This is an Epub viewer plugin based on the https://github.com/futurepress/epub.js epub.js Epub Reader</a>.
 This plugin permits the users to view EPUB files.
 
 License
@@ -24,7 +24,7 @@ Once the plugin has been installed, use the Journal Manager's "Plugins" interfac
 
 If you cannot use the Plugin Gallery, you can also install the plugin as follows:
  - Using the Journal Manager's "system plugins" area, upload the plugin .tar.gz
-   <a href="https://github.com/EKT/epubJsViewer-ojs/releases">file</a> into OJS.
+   file into OJS. Find the latest release here https://github.com/EKT/epubJsViewer-ojs/releases.
  - as Journal Manager, go into the "System Plugins" page and enable the plugin.
  - Read an EPUB file in the public reader interface of OJS and verify that 
    the plugin is embedded.
