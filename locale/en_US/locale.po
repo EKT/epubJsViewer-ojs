@@ -15,4 +15,4 @@ msgid "plugins.generic.epubJsViewer.name"
 msgstr "EPUB Viewer"
 
 msgid "plugins.generic.epubJsViewer.description"
-msgstr "This plugin uses the <a href=\"https://github.com/futurepress/epub.js\">epub.js library</a> to embed EPUB files on the article and issue galley view pages."
+msgstr "This plugin uses the <a target="_blank" href=\"https://github.com/futurepress/epub.js\">epub.js library</a> to embed EPUB files on the article and issue galley view pages."
