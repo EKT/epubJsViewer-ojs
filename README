@@ -6,8 +6,8 @@
 
 About
 -----
-This is an Epub viewer plugin based on the https://github.com/futurepress/epub.js epub.js Epub Reader</a>.
-This plugin permits the users to view EPUB files.
+This is an Epub viewer plugin based on the https://github.com/futurepress/epub.js epub.js reader for EPUB files.
+This plugin allows the users to view EPUB files.
 
 License
 -------
