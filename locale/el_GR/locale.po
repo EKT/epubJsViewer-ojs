@@ -15,6 +15,6 @@ msgid "plugins.generic.epubJsViewer.name"
 msgstr "EPUB Viewer"
 
 msgid "plugins.generic.epubJsViewer.description"
-msgstr "Αυτό το Πρόσθετο χρησιμοποιεί την <a target="_blank" href=\"https://github.com/futurepress/epub.js\">βιβλιοθήκη epub.js</a> για να ενσωματώσει EPUB αρχεία στις σελίδες προβολής άρθρων και τευχών."
+msgstr "Αυτό το Πρόσθετο χρησιμοποιεί την <a target="_blank" href=\"https://github.com/futurepress/epub.js\">βιβλιοθήκη epub.js</a> για να ενσωματώσει αρχεία EPUB στις σελίδες προβολής άρθρων και τευχών."
 
 
