@@ -88,7 +88,7 @@ class EpubJsViewerPlugin extends GenericPlugin {
 	function submissionCallback($hookName, $args) {
 		$request =& $args[0];
 		$application = Application::get();
-			
+
 		$issue =& $args[1];
 		$galley =& $args[2];
 		$submission =& $args[3];
@@ -112,7 +112,6 @@ class EpubJsViewerPlugin extends GenericPlugin {
 				'submissionNoun' => $submissionNoun,
 				'bestId' => $submission->getBestId(),
 				'galley' => $galley,
-				'jQueryUrl' => $this->_getJQueryUrl($request),
 				'currentVersionString' => $application->getCurrentVersion()->getVersionString(false),
 				'isLatestPublication' => $submission->getData('currentPublicationId') === $galley->getData('publicationId'),
 				'galleyPublication' => $galleyPublication,
@@ -144,7 +143,6 @@ class EpubJsViewerPlugin extends GenericPlugin {
 				'galleyFile' => $galley->getFile(),
 				'issue' => $issue,
 				'galley' => $galley,
-				'jQueryUrl' => $this->_getJQueryUrl($request),
 				'currentVersionString' => $application->getCurrentVersion()->getVersionString(false),
 				'isLatestPublication' => true,
 			));
@@ -155,18 +153,5 @@ class EpubJsViewerPlugin extends GenericPlugin {
 		return false;
 	}
 
-	/**
-	 * Get the URL for JQuery JS.
-	 * @param $request PKPRequest
-	 * @return string
-	 */
-	private function _getJQueryUrl($request) {
-		$min = Config::getVar('general', 'enable_minified') ? '.min' : '';
-		if (Config::getVar('general', 'enable_cdn')) {
-			return '//ajax.googleapis.com/ajax/libs/jquery/' . CDN_JQUERY_VERSION . '/jquery' . $min . '.js';
-		} else {
-			return $request->getBaseUrl() . '/lib/pkp/lib/vendor/components/jquery/jquery' . $min . '.js';
-		}
-	}
 }
 

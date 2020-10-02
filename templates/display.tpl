@@ -1,11 +1,11 @@
 {**
- * plugins/generic/pdfJsViewer/templates/display.tpl
+ * plugins/generic/epubJsViewer/templates/display.tpl
  *
  * Copyright (c) 2014-2020 Simon Fraser University
  * Copyright (c) 2003-2020 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * Embedded viewing of a PDF galley.
+ * Embedded viewing of an EPUB galley.
  *}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
@@ -48,7 +48,7 @@
 
 	</header>
 
-	<div id="pdfCanvasContainer" class="galley_view{if !$isLatestPublication} galley_view_with_notice{/if}">
+	<div id="epubCanvasContainer" class="galley_view{if !$isLatestPublication} galley_view_with_notice{/if}">
 		{if !$isLatestPublication}
 			<div class="galley_view_notice">
 				<div class="galley_view_notice_message" role="alert">
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 		{/if}
-		 <iframe class="viewable_file_frame" src="{$pluginUrl}/epub.js/index.html?url={$epubUrl}" allowfullscreen webkitallowfullscreen></iframe>
+		 <iframe class="viewable_file_frame" src="{$pluginUrl}/viewer/index.html?url={$epubUrl}" allowfullscreen webkitallowfullscreen></iframe>
 	</div>
 	{call_hook name="Templates::Common::Footer::PageFooter"}
 </body>
