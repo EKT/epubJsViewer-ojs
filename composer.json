@@ -1,11 +1,5 @@
 {
-             "name": "epubjsviewer",
-
-             "_comment": "skipped part of file",
-
-             "extra": {
-                     "npm": {
-                             "epubjs": "^0.3.88"
-                     }
-             }
-     }
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
