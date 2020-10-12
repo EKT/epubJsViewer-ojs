@@ -13,7 +13,7 @@
 <version>
 	<application>epubJsViewer</application>
 	<type>plugins.generic</type>
-	<release>1.0.0.0</release>
+	<release>1.0.0.2</release>
 	<date>2020-12-10</date>
 	<lazy-load>1</lazy-load>
 	<class>EpubJsViewerPlugin</class>
