@@ -2,7 +2,7 @@
   "name": "epubjsviewer",
   "version": "1.0.0",
   "description": "=============================================\r === epub.js Viewer Plugin\r === An epub.js-based EPUB viewer for OJS 3.2.x\r === Author: Dimitris Sioulas <dsioulas@ekt.gr>\r =============================================",
-  "main": "index.php",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
     "url": "https://github.com/EKT/epubJsViewer-ojs"
   },
   "dependencies": {
+    "composer": "^4.1.0",
     "epubjs": "^0.3.88"
   }
 }
