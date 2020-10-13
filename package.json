@@ -16,7 +16,6 @@
     "url": "https://github.com/EKT/epubJsViewer-ojs"
   },
   "dependencies": {
-    "composer": "^4.1.0",
     "epubjs": "^0.3.88"
   }
 }
