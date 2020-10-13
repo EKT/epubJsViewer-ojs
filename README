@@ -4,6 +4,7 @@
 === Author: Dimitris Sioulas <dsioulas@ekt.gr>
 =============================================
 
+
 About
 -----
 This is an Epub viewer plugin based on the https://github.com/futurepress/epub.js reader for EPUB files.
